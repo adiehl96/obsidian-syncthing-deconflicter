@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.YOURNAME.obsidian.syncthing.deconflicter</string> <!-- best practice is to use reverse domain style. plist label and filename must match except for the extension ".plist" -->
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>PATH/TO/PYTHON</string> <!-- path to your local python installation -->
+        <string>/Users/USERNAME/.local/bin/obsidian.syncthing.deconflicter.py</string> <!-- path to your script dir (suggestion follows XDG Base Directory Specification) -->
+    </array>
+
+    <key>StartInterval</key>
+    <integer>300</integer> <!-- every 5 minutes -->
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>StandardOutPath</key>
+    <string>/tmp/deconflicter.log</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/deconflicter.err</string>
+</dict>
+</plist>
