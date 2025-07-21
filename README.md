@@ -1,0 +1,1 @@
+# obsidian-syncthing-deconflicter
